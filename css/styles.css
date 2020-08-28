@@ -1,0 +1,239 @@
+body {
+}
+
+
+#title {
+  background-color:#ff4c68;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+h1 {
+  color:white;
+
+
+  font-size: 3.5rem;
+  line-height:1.5;
+
+}
+
+h3 {
+  font-family:'Montserrat';
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 3rem;
+  line-height:1.5;
+}
+
+p {
+  font-weight:500;
+  color:#8f8f8f;
+
+}
+
+
+.container-fluid  {             /*is predefined class me apan ne extra add bhi kiya h apne man se*/
+  padding:3% 15% 7%;
+}
+
+
+
+
+
+/* navigation bar */
+
+.navbar {
+  padding:0 0 4.5rem; /*pehla 0 top ke liye dusra 0 left and right and 4.5 bottom ke liye*/
+}
+
+
+.navbar-brand {
+  font-family: "ubuntu";
+  font-size: 2rem;
+  font-weight:bold;
+}
+
+
+.nav-item {
+  padding-right:18px;
+  padding-left:18px;
+
+}
+
+.nav-link {
+  font-size:1.2rem;
+
+}
+
+ /* download buttons*/
+
+.downbut {
+  margin: 5% 2% 5% 0;
+
+}
+
+
+.image{
+  width:60%;
+  transform: rotate(25deg);               /*image rotate karne k liye css property h*/
+  margin-left: 30px;
+  position: absolute;
+  /* bottom:50px; is tarah se apne man se upar niche shift kr skte hai */
+
+}
+
+
+
+/*feature section*/
+
+#features {
+  padding:7% 15%;
+  background-color: white;    /* yha default color white tha lekin apan ne white isliye diya jisse image us white-bg ke piche chle jaye bottom side se*/
+
+  position:relative;         /* image ko bottom se feature section ke peeche kar diya position absolute and position relative se ...(z-index hota h  */
+}
+
+.feature-box {
+
+  text-align: center;
+  padding:5%;
+
+}
+
+.icon {
+  color:#ef8172;
+  margin-bottom:1rem;
+
+}
+.icon:hover {
+  color:#ff4c68;
+}
+
+
+/* testimonials section*/
+
+
+#testimonials {
+
+  text-align:center;
+  background-color:#ef8172;
+  color:white;
+
+}
+
+
+
+
+.testimonials-image {
+  width:10%;
+  border-radius: 100%;
+  margin:20px;
+
+}
+
+
+#press {
+  background-color:#ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+
+}
+
+.press-logo {
+  width:15%;
+  margin:20px 20px 50px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+
+
+
+/* pricing section*/
+
+
+#pricing {
+  padding:100px;
+  text-align: center;
+}
+
+.padding {
+  padding:4% 3%;
+
+}
+
+
+
+/* cta section*/
+
+#cta {
+  background-color: #ff4c68;
+  text-align: center;
+  color:white;
+
+}
+
+
+.hh3 {
+  font-family:'Montserrat';
+  font-weight: bold;
+
+  font-size: 3.5rem;
+  line-height:1.5;
+  width:60%;
+  margin:auto;
+  padding-top: 50px;
+}
+
+
+
+
+
+/*footer section*/
+
+
+#footer {
+  background-color:white;
+  margin:100px 0 100px 0;
+  text-align:center;
+}
+
+
+.okk {
+  margin:0 10px 30px;
+  color:black;
+
+}
+
+
+
+
+@media (max-width:1028px)           /* 1028px ya usse kam ki screen par ye kaam hoga kyoki 1028 di h width */
+  {                                 /*laptop ki width 1200px hoti hai and tablet ki width 880px hoti hai */
+
+  .image {
+    position:static;               /*position ko static isliye kiya h jisse pehle jaise static ho jaye  absolute se*/
+    transform: rotate(0);          /* image seedha ho jayegi waps */
+    margin:auto;                   /* margin:auto;  centre karne ke liye*/
+
+  }
+
+  #title {
+    text-align:center;           /*i028 se kam wali width ki screen me ye sab function kaam krenge kyoki ye @media ke andar hai*/
+  }
+
+  .nav-link {
+    text-align: left;
+  }
+
+}

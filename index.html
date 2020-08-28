@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <title>TinDog</title>
+  <!--google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- bootstrap ki link ko css file ki link se pehle lgana h tabhi css file kaam kregi -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- font awesome ...apple wala -->
+  <script src="https://kit.fontawesome.com/28c4f49905.js" crossorigin="anonymous"></script> <!-- ye link fontawesome me milegi...user ke dekhne ke liye dlna pdegi ye link-->
+
+
+
+</head>
+
+
+<body>
+
+
+  <section id="title">
+    <div class="container-fluid">
+      <!-- container and container-fluid predefined hai -->
+
+
+      <!-- Nav Bar -->
+      <nav class='navbar navbar-expand-lg navbar-dark'>
+        <!-- bg-dark ese background colour bhi change kr skte hai isme colour ke name alg hote -->
+        <a class='navbar-brand' href="">tindog</a>
+        <button class="navbar-toggler   meraslide" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse meraslide2" id="navbarTogglerDemo02">
+
+
+
+          <ul class='navbar-nav ml-auto'>
+            <li class='nav-item'>
+              <a class='nav-link' href="#footer">Contact</a>      <!-- har ek section me id isliye di h jisse in nav bar ke href me likh ske-->
+            </li>                                          <!-- id ko href me likh skte hai or vo likhne se button click karne par vo hume us id wale section me le jayega-->
+            <li class='nav-item'>                           <!-- contact,pricing,download teeno ke href me id daal rhe h jisse in par click krne se kaam ho jaye-->
+              <a class='nav-link' href="#pricing">Pricing</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link' href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+
+      <!-- Title -->
+
+      <div class='row'>
+        <!-- class row and col (colomn) predefined h likhna hi pdegi-->
+
+        <div class=" col-lg-6 col-mg-12 col-sm-12">
+          <!-- col-md-4        col-md-3    col-sm-2    in sab ke baare me bootstrap  comment me pado-->
+          <h1>Meet new and interesting dogs nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg    downbut"><i class="fab fa-apple"></i> Download</button> <!-- ye apple or google play icon link net par milegi-->
+          <button type="button" class="btn btn-outline-light btn-lg   downbut"><i class="fab fa-google-play"></i> Download</button> <!-- downbut man se bnai h class css ke liye-->
+        </div>
+
+
+        <div class="col-lg-6">
+          <img class='image' src="images/iphone6.png" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+
+    <div class="row">
+
+
+
+
+      <div class="feature-box col-lg-4 col-md-4 col-sm-12">
+        <i class="icon fas fa-check-circle fa-4x"></i> <!-- fa-4x  size increase krte h and okk class man se bnai hai-->
+        <h3>Easy to use.</h3>
+        <p>So easy to use, even your dog could do it.</p>
+
+      </div>
+
+      <div class="feature-box col-lg-4 col-md-4 col-sm-12">
+        <i class="icon  fas fa-bullseye fa-4x"></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+
+      <div class="feature-box col-lg-4 col-md-4 col-sm-12">
+        <i class="icon fas fa-heart fa-4x"></i>
+        <h3>Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="flase">   <!--   yha data-ride ="carousel"  hota h.. ise false krenge tabhi automatic slide hona band hogi   -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- ye active likha hi hota h pehli class me automatic-->
+          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="testimonials-image" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonials-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <div class="row">
+      <div class=" padding col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2>Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-outline-primary btn-block" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" padding col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2>$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-primary btn-block" type="button">Sign Up</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="padding col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2>$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-primary btn-block" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class='hh3'>Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="btn btn-dark btn-lg    downbut"><i class="fab fa-apple"></i> Download</button>
+    <button type="button" class="btn btn-light btn-lg   downbut"><i class="fab fa-google-play"></i> Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <i class="fab fa-twitter okk"></i>
+    <a href="https://www.facebook.com/pratham.vijayvargiya">   <i class="fab fa-facebook-f okk"></i></a>
+    <a href="https://www.instagram.com/d_e_n_n_y_____/"><i class="fab fa-instagram okk"></i></a>
+    <a href="mailto:prathamv281@gmail.com"><i class="fas fa-envelope okk"></i></a>
+
+
+    <p>© Copyright 2018 TinDog</p>
+
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
